@@ -9,7 +9,7 @@ angular.module("judging-system").directive('register', function() {
     controller: function ($scope, $state) {
 
       $scope.credentials = {
-        firstname: '',
+        username: '',
         email: '',
         password: ''
       };

@@ -12,6 +12,7 @@ Meteor.startup(function(){
   Accounts.config({
     sendVerificationEmail: true
   });
+  // Accounts.sendResetPasswordEmail(user.id)
 });
 
 
@@ -36,3 +37,11 @@ Meteor.startup(function(){
 //     });
 //   }
 // });
+
+// Meteor.methods({
+//   sendResetPass: function(userId, email){
+//     check(userId,String);
+//     check(email,String);
+//     Accounts.sendResetPasswordEmail(userId)
+//   }
+// })

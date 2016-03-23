@@ -30,15 +30,16 @@ angular.module("judging-system").directive('register', function() {
           if (err) {
             $scope.error = err;
             console.log(err);
-          }else{
-            Meteor.call(
-              'sendEmail',
-              'felideni@gmail.com',
-              $scope.credentials.email,
-              'Hello from Meteor!',
-              'This is a test of Email.send.'
-            );
           }
+          // else{
+          //   Meteor.call(
+          //     'sendEmail',
+          //     'felideni@gmail.com',
+          //     $scope.credentials.email,
+          //     'Hello from Meteor!',
+          //     'This is a test of Email.send.'
+          //   );
+          // }
         });
 
       };
